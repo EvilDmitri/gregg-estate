@@ -1,0 +1,64 @@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GetAd</title>
+    <style>
+        body{
+            background-color: #95c2ff; /* Цвет фона веб-страницы */
+        }
+        h1 {
+            background-color: RGB(255, 248, 196); /* Цвет фона под заголовком */
+        }
+
+    </style>
+</head>
+<body>
+
+<div align="right">
+
+    <form name="change_page" action="/cacoa" method="post">
+        <input type="submit" value={{ another_page_name }}>
+    </form>
+</div>
+
+<div align="right">
+
+    <h2>{{ title }}</h2>
+    <form name="input" action="/property" method="post">
+        MLS #: <input type="text" name="mls" value={{ mls }}> <br>
+
+        Price increase for search: <input type="text" size="5" name="amount" value={{ amount }} > <br>
+
+
+        <input type="submit" value="Get ad"> <br>
+
+    </form>
+</div>
+
+
+
+
+<br>
+
+
+
+
+<table border="0" >
+    <tr>
+        <td width="600" valign="top">
+            {{ html }}
+        </td>
+
+        <td width="300"><label>
+            <textarea rows="70" cols="70">
+                {{ html }}
+            </textarea>
+        </label></td>
+
+    </tr>
+</table>
+
+
+</body>
+</html>
