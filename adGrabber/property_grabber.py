@@ -98,12 +98,12 @@ def PropertyGrabber(mls, amount):
     except Exception:
         listing_office = ''
 
-    icon_equalhousing = 'www.propertyinsantacruz.com'
     home = 'http://www.propertyinsantacruz.com/'
+    logo_name ='PropertyinSantaCruz.jpg'
 
     final_html = CraigList(image_link=image_link, price_text=price_text, desc_text=desc_text,
-                        search_by_type_area=search_link, home=home, listing_office=listing_office,
-                        link=link, icon_equalhousing=icon_equalhousing)
+                        search_by_type_area=search_link, home=home, logo_name=logo_name, listing_office=listing_office,
+                        link=link)
 
 
     return final_html

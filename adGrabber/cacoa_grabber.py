@@ -116,12 +116,12 @@ def CacoaGrabber(mls, amount):
 
     all_homes = '<h2>Search All homes in the region at <a href="{0}">http://www.cacoastalhome.com/</a></h2>\n'
 
-    icon_equalhousing = 'www.cacoastalhome.com'
     home = 'http://www.cacoastalhome.com/'
+    logo_name = 'CaCoastalHome.jpg'
 
     final_html = CraigList(image_link=image_link, price_text=price_text, desc_text=desc_text,
-                               search_by_type_area=search_link, home=home,
-                               listing_office=listing_office, link=link, icon_equalhousing=icon_equalhousing)
+                               search_by_type_area=search_link, home=home, logo_name=logo_name,
+                               listing_office=listing_office, link=link)
 
 
     return final_html

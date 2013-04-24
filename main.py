@@ -146,17 +146,10 @@ class PropertyHandler(webapp2.RequestHandler):
 
 
 
-class PiscImageHandler(webapp2.RequestHandler):
-    def get(self):
-        self.response.headers['Content-Type'] = 'image/jpeg'
-        self.response.out.write("""<img src = '/static/images/PISC.jpg' />""")
-
-
 app = webapp2.WSGIApplication(
     [('/', MainHandler),
     ('/cacoa', CacoaHandler),
-    ('/property', PropertyHandler),
-    ('/images/PISC.jpg', PiscImageHandler),], debug=True)
+    ('/property', PropertyHandler),], debug=True)
 
 
 
