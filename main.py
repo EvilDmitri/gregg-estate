@@ -2,8 +2,7 @@
 
 import cgi
 import os
-from google.appengine.api import users
-from google.appengine.ext import db
+
 
 import webapp2
 import jinja2
@@ -16,11 +15,6 @@ jinja_enviroment = jinja2.Environment(
 from adGrabber.cacoa_grabber import CacoaGrabber
 from adGrabber.property_grabber import PropertyGrabber
 
-
-
-class Amount(db.Model):
-    sitename = db.StringProperty()
-    size = db.IntegerProperty()
 
 
 class MainHandler(webapp2.RequestHandler):

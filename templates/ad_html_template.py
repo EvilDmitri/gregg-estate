@@ -10,9 +10,9 @@ def CraigList(image_link=None, price_text=None, desc_text=None, search_by_type_a
 
     header_div_end = '</div>\n'
 
-    footer_div = '<div style="font-size:10px; text-align: left"><p >Gregg  Camp</p><p>CA DRE#00904586</p>\n'
+    footer_div = '<div style="font-size:10px; text-align: left"><p><strong>Gregg Camp</strong><br>CA DRE#00904586<br>\n'
 
-    logo = '<p><img border="0" src="http://gregg-estate.appspot.com/images/logo/{0}"/></p>\n'
+    logo = '<img border="0" src="http://gregg-estate.appspot.com/images/logo/{0}"/><br><br></p>\n'
 
     all_homes = '<h2>Search All homes in the region at <a href="{0}">{1}</a></h2>\n'
 
